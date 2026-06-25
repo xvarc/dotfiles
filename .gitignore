@@ -1,0 +1,15 @@
+# Claude Code runtime — do not track
+claude/sessions/
+claude/history.jsonl
+claude/cache/
+claude/backups/
+claude/shell-snapshots/
+claude/session-env/
+claude/paste-cache/
+claude/plans/
+claude/tasks/
+claude/.last-cleanup
+claude/.last-update-result.json
+claude/stats-cache.json
+claude/debug/
+claude/downloads/
