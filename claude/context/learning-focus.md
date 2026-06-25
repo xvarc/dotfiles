@@ -25,6 +25,7 @@
 - **Level:** doing it in practice (Justin, Onishi, TSA, vendors); wants the explicit theory and repeatable artifacts.
 - **Teach when:** stakeholder mapping, comms planning, managing TMC/Onishi/Justin/Lewis/Madi relationships, framing messages, escalation, expectation-setting, Go/No-Go prep.
 - **Preferred modalities:** name the framework (power/interest grid, salience model, RACI), apply it to the actual stakeholder in front of us, short self-explanation checks.
+- **Applied goal (Xan, 2026-06-25):** in time, operationalise these practices in **Jira** — Jira is the ultimate source of truth for timelines. Wants to (a) capture *when* each recurring stakeholder follow-up should happen as Jira items, and (b) build reusable **templates** for how each follow-up / comms artifact is done. Treat building this as part of the learning, not separate from it — the act of designing the cadence + templates is where the stakeholder-management theory gets internalised. Ties to the planned Jira skill/agent.
 - **Log:**
   - _(empty)_
 
