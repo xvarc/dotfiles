@@ -73,7 +73,11 @@ column-number notes** (those are stale from an earlier version). Algorithm:
    (JUL=col11, AUG=15, SEP=20, OCT=24, NOV=28, DEC=33, JAN=37, FEB=41, MAR=45);
    cols 7–10 are June. Year rolls to 2027 from JAN.
 2. For each task row, the filled (non-empty `patternType`) cells in cols 7–48
-   give start = min filled col's date, end = max filled col's date.
+   give start = min filled col's date, **end = max filled col's date + 6 days**.
+   The columns hold week-start (Monday) dates; each filled cell = one full week
+   (Mon–Sun). Using `end = max col's date` without +6 produces zero-width bars
+   for single-week tasks and wrong end dates for multi-week tasks — those tasks
+   render as invisible dots on the Jira timeline. Always add 6.
 3. Components are the rows in col 3; stage/owner rows are cols 5 (DETAILS) + 6
    (RESPONSIBLE). Load with `data_only=False` to read fill styling.
 
