@@ -76,6 +76,7 @@ symlink $PWD/claude/skills ~/.claude/skills
 symlink $PWD/claude/context ~/.claude/context
 symlink $PWD/claude/hooks ~/.claude/hooks
 symlink $PWD/claude/CLAUDE.md ~/.claude/CLAUDE.md
+symlink $PWD/claude/settings.json ~/.claude/settings.json
 
 # Refresh the current terminal with the newly installed configuration
 exec zsh
