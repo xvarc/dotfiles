@@ -69,10 +69,13 @@ if [[ `uname` =~ "Darwin" ]]; then
   ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 fi
 
-# Symlink Claude Code agents and skills into ~/.claude/
+# Symlink Claude Code agents, skills, context, hooks, and CLAUDE.md into ~/.claude/
 mkdir -p ~/.claude
 symlink $PWD/claude/agents ~/.claude/agents
 symlink $PWD/claude/skills ~/.claude/skills
+symlink $PWD/claude/context ~/.claude/context
+symlink $PWD/claude/hooks ~/.claude/hooks
+symlink $PWD/claude/CLAUDE.md ~/.claude/CLAUDE.md
 
 # Refresh the current terminal with the newly installed configuration
 exec zsh
