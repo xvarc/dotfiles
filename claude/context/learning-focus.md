@@ -27,7 +27,7 @@
 - **Preferred modalities:** name the framework (power/interest grid, salience model, RACI), apply it to the actual stakeholder in front of us, short self-explanation checks.
 - **Applied goal (Xan, 2026-06-25):** in time, operationalise these practices in **Jira** — Jira is the ultimate source of truth for timelines. Wants to (a) capture *when* each recurring stakeholder follow-up should happen as Jira items, and (b) build reusable **templates** for how each follow-up / comms artifact is done. Treat building this as part of the learning, not separate from it — the act of designing the cadence + templates is where the stakeholder-management theory gets internalised. Ties to the planned Jira skill/agent.
 - **Log:**
-  - _(empty)_
+  - 2026-06-25: power/interest grid → follow-up cadence; grid sets the *tier*, relationship direction + cost-of-delay set the *rhythm within tier* (Onishi vs Justin). Jira externalises prospective memory (good under capacity peak) but risks "map = territory" — DoD must be outcome, not activity. *Covered as worked examples (Xan asked for my answers) — he did NOT recall first, so retrieval is untested. Revisit with a cold retrieval check next session; then salience model for the localization vendor edge case.*
 
 ## 3. Japanese — technical & working language
 - **Why:** TMC source material, localization (Kenta/Yumiko), and Onishi comms are in Japanese; building working + technical fluency directly serves the role.
