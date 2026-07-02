@@ -17,7 +17,7 @@
     "DISABLE_TELEMETRY": "1",
     "CLAUDE_CODE_ENABLE_AUTO_MODE": "1"
   },
-  "model": "opus",
+  "model": "sonnet",
   "hooks": {
     "SessionStart": [
       {
@@ -29,6 +29,10 @@
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
     "slack@claude-plugins-official": true
