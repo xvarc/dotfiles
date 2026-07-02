@@ -1,7 +1,7 @@
 {
   "apiKeyHelper": "~/.claude/get_wovey_token.sh",
   "env": {
-    "ANTHROPIC_BEDROCK_BASE_URL": "https://wovey-api.woven.tech/bedrock/project/fa8716b4-1f64-467a-a3da-6a60f1239315",
+    "ANTHROPIC_BEDROCK_BASE_URL": "https://wovey-api.woven.tech/bedrock/project/hackathon_jul_2026",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "global.anthropic.claude-opus-4-8",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "global.anthropic.claude-sonnet-4-6",
@@ -18,7 +18,6 @@
     "CLAUDE_CODE_ENABLE_AUTO_MODE": "1"
   },
   "model": "opus",
-  "autoUpdatesChannel": "stable",
   "hooks": {
     "SessionStart": [
       {
@@ -30,5 +29,9 @@
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {
+    "slack@claude-plugins-official": true
+  },
+  "autoUpdatesChannel": "stable"
 }
