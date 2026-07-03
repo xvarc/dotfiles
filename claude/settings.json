@@ -17,7 +17,7 @@
     "DISABLE_TELEMETRY": "1",
     "CLAUDE_CODE_ENABLE_AUTO_MODE": "1"
   },
-  "model": "sonnet",
+  "model": "haiku",
   "hooks": {
     "SessionStart": [
       {
