@@ -85,6 +85,7 @@ text that sounds unmistakably like Xan wrote it — not Claude paraphrasing Xan.
 - Over-apologising (no "sorry for bothering you" before a reminder).
 - Emojis or jokes in serious, sensitive communications.
 - Excessive deference to seniority — keep an even, collegial tone with everyone.
+- **Internal vault paths or private file references** — never include relative paths to Obsidian vault docs, local file system paths, or internal notes. Only link to things the recipient can actually open: OneDrive URLs, Confluence pages, Jira tickets, Slack threads, GitHub repos, or shared Google Drive links.
 
 ---
 
