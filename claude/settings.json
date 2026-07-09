@@ -16,7 +16,7 @@
     "DISABLE_LOGOUT_COMMAND": "1",
     "DISABLE_TELEMETRY": "1"
   },
-  "model": "opus",
+  "model": "sonnet",
   "hooks": {
     "SessionStart": [
       {

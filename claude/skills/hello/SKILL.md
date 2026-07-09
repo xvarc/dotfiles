@@ -71,6 +71,21 @@ The handoff doc is *your* working state; chief-of-staff is *program* state
 **chief-of-staff** agent for the current standup, and fold its output in below
 the board so Xan gets both: "where I left my tools" + "what the program needs".
 
+### 4b. Check for pending AIWS nudges
+The `aiws-nudge` skill is scheduled (Tue AM / Thu PM nudges, Mon missed-deadline
+check) via launchd, which drops a marker file when one is due. Check for markers:
+
+```bash
+ls ~/.claude/aiws-nudge/pending/*.flag 2>/dev/null
+```
+
+If any exist, read each and surface it in the board — e.g. "⏰ A Tuesday AIWS
+nudge is due (scheduled 09:57) — run `/aiws-nudge` to draft it" or "⏰ Monday
+missed-deadline check is pending." A marker still present days after its `due`
+date means the scheduled run was **missed** — say so. Don't run the nudge
+automatically; just remind Xan it's waiting. Running `/aiws-nudge` clears the
+marker.
+
 ### 5. Hand off to work
 Close with a single recommended next step and a question, e.g.:
 "Top of the list is finishing the Jira build-out — next action is AS Course 1's
