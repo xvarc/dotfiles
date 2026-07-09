@@ -110,12 +110,27 @@ Invoke the voice spec via `/xan-voice` if not already loaded. Gear 2
 - Closing **"On my side:"** line = Xan's own commitments (RS2, sign-offs, etc.),
   from Jira + what he's told you this session.
 
-**Mentions:** put `@Name` before each person so Slack can resolve them. If Xan
-wants guaranteed resolution on paste, use the `<@MEMBER_ID>` form from the
-anchors above instead.
+**Ticket links — always use full URLs, never bare keys.** Write
+`https://woven-dojo.atlassian.net/browse/SAO-XXXX`, not `SAO-XXXX`. Slack only
+auto-links bare keys if the Jira integration is enabled in that channel — don't
+rely on it. Full URLs always render as clickable links.
 
-**Always copy the final text to the clipboard** with `pbcopy` (heredoc, so
-formatting survives), and also show it in the reply. Confirm the line count.
+**Mentions:** put `@Name` before each person so Slack can resolve them. Slack
+sometimes pastes `@Name` as plain text — so always include a mention fallback in
+the saved comms file listing the raw `<@MEMBER_ID>` form (from the anchors
+above), which always resolves on paste.
+
+**Delivery — save to a comms file first, clipboard second.** pbcopy is flaky and
+the clipboard is not durable. So:
+1. **Save the draft to a dated markdown file** in the vault:
+   `Notes/comms/YYYY-MM-DD-aiws-review-nudge.md`. Include: frontmatter (type,
+   channel, date, status), the paste-ready message, the mention fallback
+   (raw member IDs), and a table of referenced tickets with full URLs. This is
+   the durable record — it survives clipboard failure and commits with the vault.
+2. **Then also `pbcopy`** the paste-ready message (heredoc, so formatting
+   survives) as a convenience, and show it in the reply. Confirm the line count.
+3. Tell Xan both: it's on the clipboard AND saved at the comms path, so if the
+   paste loses links or mentions he can open the file and copy from there.
 
 **Delivery discipline:** for now, **draft-only** — show it and copy it, let Xan
 post. Once Xan says he's comfortable, this skill may post directly to
@@ -169,6 +184,10 @@ If the schedule fires and there's nothing due, say so briefly rather than
 manufacturing a nudge.
 
 ## Notes
+- **Never transition or edit a Jira ticket assigned to someone else** — status
+  is the owner's call. If a sweep finds an other-owned ticket that's done in
+  reality but stale in Jira, surface it or flag the owner; never move it. Xan's
+  own tickets are fine to transition on his say-so.
 - Never nudge Xan. His items are commitments in the closing line.
 - Live data only — sweep the epics every run; don't reuse a stale ticket list.
 - Draft-first until Xan promotes it to auto-send.
