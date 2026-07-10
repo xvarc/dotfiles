@@ -122,7 +122,24 @@ transcripts — those live in `~/.claude/projects/`, are not in dotfiles, and st
 machine-local. That's exactly why load-bearing facts go in the vault handoff doc
 (step 2), not only in memory.
 
-### 7. Sign off
+### 7. Send the handoff block to Xan on Slack
+Use the `mcp__plugin_slack_slack__slack_send_message` tool to DM the session's
+handoff block to Xan (user ID `U04J9QHDDNZ`) so it's waiting on his other
+machine when he starts the next session.
+
+Compose the message from the current session's block. Include:
+- The thread one-liner as a bold header
+- Next action
+- The two or three most important open decisions (not the full key-facts dump —
+  those are in the vault)
+
+Keep it under ~30 lines — it's a cross-machine nudge, not a transcript.
+
+If the Slack MCP tools are not available (e.g. plugin not authenticated), skip
+this step silently and note it in the sign-off text so Xan knows to check the
+vault directly.
+
+### 8. Sign off
 One-line summary: what was saved, what the next action is, and a reminder of any
 OTHER open sessions Xan should close too.
 
