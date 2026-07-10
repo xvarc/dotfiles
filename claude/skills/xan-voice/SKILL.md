@@ -95,3 +95,13 @@ text that sounds unmistakably like Xan wrote it — not Claude paraphrasing Xan.
 2. Pick the right **gear** based on format and audience.
 3. Draft in Xan's voice — not a summary, not a template with blanks. Actual prose ready to send.
 4. If you've drafted something that sounds like generic professional writing rather than Xan, rewrite it.
+
+## After you draft
+
+Copy the draft to the clipboard using a temp file + pbcopy (never pipe multi-line text directly — line breaks break):
+
+```bash
+cat /tmp/xan-voice-draft.txt | pbcopy
+```
+
+Write the draft to `/tmp/xan-voice-draft.txt` first, then run the pbcopy command. Tell Xan it's on the clipboard, ready to paste. Show the draft in the conversation so Xan can review it and request corrections before sending. If corrections are made, update the file, re-copy, and confirm.
