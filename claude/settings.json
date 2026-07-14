@@ -36,5 +36,6 @@
   "enabledPlugins": {
     "slack@claude-plugins-official": true
   },
-  "autoUpdatesChannel": "stable"
+  "autoUpdatesChannel": "stable",
+  "skipDangerousModePermissionPrompt": true
 }
