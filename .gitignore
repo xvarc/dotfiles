@@ -13,3 +13,7 @@ claude/.last-update-result.json
 claude/stats-cache.json
 claude/debug/
 claude/downloads/
+
+# gdrive-tools — credential path + deps, never track
+gdrive-tools/node_modules/
+gdrive-tools/.env
